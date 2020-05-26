@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:imnstudioslanding/services/navigation_service.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-
+import 'package:imnstudioslanding/extensions/hover_extensions.dart';
 import '../../locator.dart';
 
 class NavBarItem extends StatelessWidget {
@@ -27,7 +27,7 @@ class NavBarItem extends StatelessWidget {
         child: Text(
           title,
           style: TextStyle(fontSize: 18, color: Colors.grey),
-        ),
+        ).showCursorOnHover.moveUpOnHover,
       );
     });
   }

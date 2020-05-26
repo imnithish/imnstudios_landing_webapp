@@ -4,7 +4,6 @@ import 'package:imnstudioslanding/routing/route_names.dart';
 import 'package:imnstudioslanding/widgets/navigation_bar/navbar_item.dart';
 import 'package:imnstudioslanding/widgets/navigation_bar/navbar_logo.dart';
 
-
 class NavigationBarTabletDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -18,6 +17,10 @@ class NavigationBarTabletDesktop extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
+              NavBarItem('HOME', HomeRoute),
+              SizedBox(
+                width: 60,
+              ),
               NavBarItem('RIDER CONNECT', RiderConnectRoute),
               SizedBox(
                 width: 60,

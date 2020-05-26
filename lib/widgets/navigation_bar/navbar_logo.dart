@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:imnstudioslanding/constants/app_colors.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:imnstudioslanding/services/navigation_service.dart';
-
+import 'package:imnstudioslanding/extensions/hover_extensions.dart';
 import '../../locator.dart';
 
 class NavBarLogo extends StatelessWidget {
@@ -14,20 +15,20 @@ class NavBarLogo extends StatelessWidget {
     return ResponsiveBuilder(builder: (context, sizingInformation) {
       double logoSize =
           sizingInformation.deviceScreenType == DeviceScreenType.mobile
-              ? 25
+              ? 20
               : 45;
 
       return GestureDetector(
         onTap: () {
           locator<NavigationService>().navigateTo(navigationPath);
         },
-        child: SizedBox(
-          child: Text(
-            'imnstudios',
-            style: TextStyle(
-                fontFamily: 'Coolvetica', fontSize: logoSize, color: Colors.white),
-          ),
-        ),
+        child: Text(
+          'imnstudios',
+          style: TextStyle(
+              fontFamily: 'Coolvetica',
+              fontSize: logoSize,
+              color: Colors.green),
+        ).showCursorOnHover,
       );
     });
   }
