@@ -5,6 +5,9 @@ import 'package:imnstudioslanding/widgets/heading/heading.dart';
 import 'package:imnstudioslanding/widgets/image_asset/image_asset.dart';
 import 'package:imnstudioslanding/extensions/hover_extensions.dart';
 
+// ignore: avoid_web_libraries_in_flutter
+import 'dart:js' as js;
+
 class RiderConnectViewDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -76,8 +79,33 @@ class RiderConnectViewDesktop extends StatelessWidget {
               ).showCursorOnHover.moveUpOnHover,
             ],
           ),
+          SizedBox(
+            height: 50,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              FlatButton(
+                onPressed: () {
+                  _launchURL();
+                },
+                child: Text(
+                  'Privacy Policy.',
+                  style: TextStyle(color: Colors.grey),
+                ),
+              ).showCursorOnHover,
+              Text(
+                'Copyrights imnstudios and respective owners.',
+                style: TextStyle(color: Colors.grey),
+              )
+            ],
+          )
         ],
       ),
     );
   }
+}
+
+_launchURL() async {
+  js.context.callMethod("open", ["https://riderconnect.github.io/hellorc/"]);
 }

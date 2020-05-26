@@ -27,7 +27,7 @@ class NavigationDrawerHeader extends StatelessWidget {
                     fontSize: 25,
                     fontFamily: 'Coolvetica',
                     color: Colors.green)),
-            Text('HOME', style: TextStyle(fontSize: 15, color: Colors.grey)),
+            Text('HOME', style: TextStyle(fontSize: 15, color: Colors.white70)),
           ],
         ),
       ),
