@@ -17,7 +17,7 @@ class RiderConnectViewDesktop extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           SizedBox(
-            height: 100,
+            height: 50,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,

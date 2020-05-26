@@ -16,7 +16,7 @@ class HomeContentMobile extends StatelessWidget {
         children: <Widget>[
           HomeDetails(),
           SizedBox(
-            height: 100,
+            height: 20,
           ),
           CallToAction(),
         ],
