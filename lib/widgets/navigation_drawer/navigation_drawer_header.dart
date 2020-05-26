@@ -8,12 +8,11 @@ class NavigationDrawerHeader extends StatelessWidget {
   final String navigationPath;
 
   NavigationDrawerHeader({this.navigationPath});
-
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-//        Navigator.of(context).pop();
+      Scaffold.of(context).openEndDrawer();
         locator<NavigationService>().navigateTo(navigationPath);
       },
       child: Container(

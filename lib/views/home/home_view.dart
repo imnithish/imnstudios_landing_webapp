@@ -7,6 +7,7 @@ import 'package:responsive_builder/responsive_builder.dart';
 class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     return ScreenTypeLayout(
       desktop: HomeContentDesktop(),
       mobile: HomeContentMobile(),
