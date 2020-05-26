@@ -18,11 +18,11 @@ class NavigationBarTabletDesktop extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              NavBarItem('RIDER CONNECT', EpisodesRoute),
+              NavBarItem('RIDER CONNECT', RiderConnectRoute),
               SizedBox(
                 width: 60,
               ),
-              NavBarItem('CONTACT', AboutRoute)
+              NavBarItem('CONTACT', ContactRoute)
             ],
           ),
         ],

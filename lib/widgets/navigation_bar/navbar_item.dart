@@ -21,7 +21,7 @@ class NavBarItem extends StatelessWidget {
         onTap: () {
           locator<NavigationService>().navigateTo(navigationPath);
           if (isMobile) {
-            Navigator.of(context).pop();
+//            Navigator.of(context).pop();
           }
         },
         child: Text(

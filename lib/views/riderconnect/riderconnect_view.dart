@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class EpisodesView extends StatelessWidget {
+class RiderConnectView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(

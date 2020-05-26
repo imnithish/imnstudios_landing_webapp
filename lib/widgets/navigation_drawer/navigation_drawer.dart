@@ -21,8 +21,8 @@ class NavigationDrawer extends StatelessWidget {
             height: 50,
           ),
           NavigationDrawerHeader(navigationPath: HomeRoute),
-          DrawerItem(title: 'RIDER CONNECT', navigationPath: EpisodesRoute),
-          DrawerItem(title: 'About', navigationPath: AboutRoute),
+          DrawerItem(title: 'RIDER CONNECT', navigationPath: RiderConnectRoute),
+          DrawerItem(title: 'About', navigationPath: ContactRoute),
         ],
       ),
     );
