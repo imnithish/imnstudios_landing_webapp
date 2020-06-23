@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:imnstudioslanding/constants/app_colors.dart';
 import 'package:imnstudioslanding/widgets/description/description.dart';
 import 'package:imnstudioslanding/widgets/heading/heading.dart';
@@ -11,6 +12,10 @@ import 'dart:js' as js;
 class RiderConnectViewDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setApplicationSwitcherDescription(ApplicationSwitcherDescription(
+      label: 'imnstudios | RIDER CONNECT',
+      primaryColor: Theme.of(context).primaryColor.value,
+    ));
     return Container(
       color: secondaryColor,
       child: Column(

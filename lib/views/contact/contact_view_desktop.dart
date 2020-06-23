@@ -1,10 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:imnstudioslanding/constants/app_colors.dart';
 
 class ContactViewDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setApplicationSwitcherDescription(ApplicationSwitcherDescription(
+      label: 'imnstudios | Contact',
+      primaryColor: Theme.of(context).primaryColor.value,
+    ));
     return Container(
       color: secondaryColor,
       child: Column(
