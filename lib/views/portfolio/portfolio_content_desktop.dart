@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:imnstudioslanding/extensions/hover_extensions.dart';
 import 'package:flutter_dash/flutter_dash.dart';
+import 'dart:js' as js;
 
 class PortfolioContentDesktop extends StatelessWidget {
   @override
@@ -42,7 +43,7 @@ class PortfolioContentDesktop extends StatelessWidget {
                       ),
                       Text(
                         'Nitheesh AG',
-                        style: TextStyle(fontSize: 50, color: Colors.red),
+                        style: TextStyle(fontSize: 50, color: Colors.redAccent),
                       ),
                       Text(
                         'A Mobile App Developer',
@@ -86,14 +87,10 @@ class PortfolioContentDesktop extends StatelessWidget {
           SizedBox(
             height: 50,
           ),
-          Dash(
-              direction: Axis.horizontal,
-              length: 250,
-              dashLength: 8,
-              dashGap: 54,
-              dashColor: Colors.white70,
-              dashBorderRadius: 4,
-              dashThickness: 8),
+          Text(
+            '..scroll down for more..',
+            style: TextStyle(fontSize: 16, color: Colors.red),
+          ),
           SizedBox(
             height: 50,
           ),
@@ -236,8 +233,191 @@ class PortfolioContentDesktop extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
               ]),
+          SizedBox(
+            height: 20,
+          ),
+          Dash(
+              direction: Axis.horizontal,
+              length: 250,
+              dashLength: 8,
+              dashGap: 54,
+              dashColor: Colors.white70,
+              dashBorderRadius: 4,
+              dashThickness: 8),
+          SizedBox(
+            height: 20,
+          ),
+          Text(
+            'Work Experience.',
+            style: TextStyle(fontSize: 20, color: Colors.white),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Text(
+            'Currently freelancing and looking for opportunities.',
+            style: TextStyle(fontSize: 18, color: Colors.white),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Dash(
+              direction: Axis.horizontal,
+              length: 250,
+              dashLength: 8,
+              dashGap: 54,
+              dashColor: Colors.white70,
+              dashBorderRadius: 4,
+              dashThickness: 8),
+          SizedBox(
+            height: 20,
+          ),
+          Text(
+            'Education.',
+            style: TextStyle(fontSize: 20, color: Colors.white),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Text(
+            'B.Tech Computer Engineering degree from APJ Abdul Kalam Technological University, Kerala',
+            style: TextStyle(fontSize: 18, color: Colors.white),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Dash(
+              direction: Axis.horizontal,
+              length: 250,
+              dashLength: 8,
+              dashGap: 54,
+              dashColor: Colors.white70,
+              dashBorderRadius: 4,
+              dashThickness: 8),
+          SizedBox(
+            height: 20,
+          ),
+          Text(
+            'Projects.',
+            style: TextStyle(fontSize: 20, color: Colors.white),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          GestureDetector(
+            onTap: _launchURLRc,
+            child: Text(
+              'RIDER CONNECT',
+              style: TextStyle(fontSize: 18, color: Colors.deepOrange),
+            ),
+          ).showCursorOnHover.moveUpOnHover,
+          SizedBox(
+            height: 10,
+          ),
+          GestureDetector(
+            onTap: _launchURLGb,
+            child: Text(
+              'Check all projects at GitHub.',
+              style: TextStyle(fontSize: 18, color: Colors.white),
+            ),
+          ).showCursorOnHover.moveUpOnHover,
+          SizedBox(
+            height: 20,
+          ),
+          Dash(
+              direction: Axis.horizontal,
+              length: 250,
+              dashLength: 8,
+              dashGap: 54,
+              dashColor: Colors.white70,
+              dashBorderRadius: 4,
+              dashThickness: 8),
+          SizedBox(
+            height: 20,
+          ),
+          Text(
+            'Contact.',
+            style: TextStyle(fontSize: 20, color: Colors.white),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Text(
+            '+91 8907471155\nimnithish@live.com',
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 25, color: Colors.white),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              GestureDetector(
+                onTap: _launchURLGb,
+                child: Image.asset(
+                  'assets/githubwhite.png',
+                  scale: 1,
+                ),
+              ).moveUpOnHover.showCursorOnHover,
+              SizedBox(
+                width: 10,
+              ),
+              GestureDetector(
+                onTap: _launchURLLi,
+                child: Image.asset(
+                  'assets/linkedin.png',
+                  scale: 9,
+                ),
+              ).moveUpOnHover.showCursorOnHover,
+              SizedBox(
+                width: 10,
+              ),
+              GestureDetector(
+                onTap: _launchURLFb,
+                child: Image.asset(
+                  'assets/fb.png',
+                  scale: 1,
+                ),
+              ).moveUpOnHover.showCursorOnHover,
+              SizedBox(
+                width: 10,
+              ),
+              GestureDetector(
+                onTap: _launchURLInsta,
+                child: Image.asset(
+                  'assets/insta.png',
+                  scale: 1,
+                ),
+              ).moveUpOnHover.showCursorOnHover,
+            ],
+          ),
+          SizedBox(
+            height: 100,
+          ),
         ],
       ),
     );
   }
+}
+
+
+_launchURLRc()  {
+  js.context.callMethod("open", ["https://imnstudios.com/#/riderconnect/"]);
+}
+
+_launchURLGb()  {
+  js.context.callMethod("open", ["https://github.com/imnithish/"]);
+}
+
+_launchURLLi()  {
+  js.context.callMethod("open", ["https://www.linkedin.com/in/imnithish/"]);
+}
+
+_launchURLFb()  {
+  js.context.callMethod("open", ["https://www.facebook.com/nithish.ag/"]);
+}
+
+_launchURLInsta()  {
+  js.context.callMethod("open", ["https://www.instagram.com/imnithish/"]);
 }
