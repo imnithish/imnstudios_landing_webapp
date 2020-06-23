@@ -406,7 +406,7 @@ class PortfolioContentDesktop extends StatelessWidget {
 
 
 _launchURLRc()  {
-  js.context.callMethod("open", ["https://imnstudios.com/#/riderconnect/"]);
+  js.context.callMethod("open", ["https://imnstudios.com/#/riderconnect"]);
 }
 
 _launchURLGb()  {
