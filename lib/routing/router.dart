@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:imnstudioslanding/routing/route_names.dart';
 import 'package:imnstudioslanding/views/contact/contact_view.dart';
 import 'package:imnstudioslanding/views/home/home_view.dart';
+import 'package:imnstudioslanding/views/portfolio/portfolio_view.dart';
 import 'package:imnstudioslanding/views/riderconnect/riderconnect_view.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
@@ -14,6 +15,8 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return _getPageRoute(RiderConnectView(), settings);
     case ContactRoute:
       return _getPageRoute(ContactView(), settings);
+    case PortfolioRoute:
+      return _getPageRoute(PortfolioView(), settings);
     default:
       return _getPageRoute(HomeView(), settings);
   }

@@ -20,10 +20,14 @@ class HomeDetails extends StatelessWidget {
           sizingInformation.deviceScreenType == DeviceScreenType.mobile
               ? 16
               : 21;
+      var alignment =
+          sizingInformation.deviceScreenType == DeviceScreenType.mobile
+              ? CrossAxisAlignment.center
+              : CrossAxisAlignment.start;
       return Container(
         width: 600,
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: alignment,
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
@@ -42,9 +46,7 @@ class HomeDetails extends StatelessWidget {
             Text(
               'FIND A RIDE PARTNER, CREATE EVENTS, MEETUPS, RIDES, CREATE CLUBS AND GROUPS FIND AWESOME DEALS GET TO KNOW TRAVEL STORIES AND MUCH MORE',
               style: TextStyle(
-                  fontSize: descriptionSize,
-                  height: 1.7,
-                  color: Colors.white),
+                  fontSize: descriptionSize, height: 1.7, color: Colors.white),
               textAlign: textAlignment,
             )
           ],

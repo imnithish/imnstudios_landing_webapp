@@ -12,4 +12,3 @@ class NavigationBar extends StatelessWidget {
     );
   }
 }
-
