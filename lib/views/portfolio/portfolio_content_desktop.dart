@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:imnstudioslanding/constants/app_colors.dart';
 import 'package:imnstudioslanding/extensions/hover_extensions.dart';
 import 'package:flutter_dash/flutter_dash.dart';
 // ignore: avoid_web_libraries_in_flutter
@@ -16,6 +17,7 @@ class PortfolioContentDesktop extends StatelessWidget {
     ));
 
     return Container(
+      color: secondaryColor,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[

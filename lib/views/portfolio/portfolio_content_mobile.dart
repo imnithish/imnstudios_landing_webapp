@@ -2,7 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_dash/flutter_dash.dart';
+import 'package:imnstudioslanding/constants/app_colors.dart';
 import 'package:imnstudioslanding/extensions/hover_extensions.dart';
+// ignore: avoid_web_libraries_in_flutter
 import 'dart:js' as js;
 
 class PortfolioContentMobile extends StatelessWidget {
@@ -14,6 +16,7 @@ class PortfolioContentMobile extends StatelessWidget {
       primaryColor: Theme.of(context).primaryColor.value,
     ));
     return Container(
+      color: secondaryColor,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
