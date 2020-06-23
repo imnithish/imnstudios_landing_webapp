@@ -133,7 +133,7 @@ class PortfolioContentMobile extends StatelessWidget {
             width: 10,
           ),
           Text(
-            'MySQL, Firsbase',
+            'MySQL, Firebase',
             style: TextStyle(
               fontSize: 25,
               color: Colors.pinkAccent,
