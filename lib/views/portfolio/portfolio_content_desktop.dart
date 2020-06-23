@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:imnstudioslanding/extensions/hover_extensions.dart';
 import 'package:flutter_dash/flutter_dash.dart';
+// ignore: avoid_web_libraries_in_flutter
 import 'dart:js' as js;
 
 class PortfolioContentDesktop extends StatelessWidget {
@@ -70,7 +71,7 @@ class PortfolioContentDesktop extends StatelessWidget {
             height: 50,
           ),
           Text(
-            'About.',
+            'ABOUT.',
             style: TextStyle(fontSize: 20, color: Colors.white),
           ),
           SizedBox(
@@ -248,7 +249,7 @@ class PortfolioContentDesktop extends StatelessWidget {
             height: 20,
           ),
           Text(
-            'Work Experience.',
+            'WORK EXPERIENCE.',
             style: TextStyle(fontSize: 20, color: Colors.white),
           ),
           SizedBox(
@@ -273,7 +274,7 @@ class PortfolioContentDesktop extends StatelessWidget {
             height: 20,
           ),
           Text(
-            'Education.',
+            'EDUCATION.',
             style: TextStyle(fontSize: 20, color: Colors.white),
           ),
           SizedBox(
@@ -298,7 +299,7 @@ class PortfolioContentDesktop extends StatelessWidget {
             height: 20,
           ),
           Text(
-            'Projects.',
+            'PROJECTS.',
             style: TextStyle(fontSize: 20, color: Colors.white),
           ),
           SizedBox(
@@ -336,7 +337,7 @@ class PortfolioContentDesktop extends StatelessWidget {
             height: 20,
           ),
           Text(
-            'Contact.',
+            'CONTACT.',
             style: TextStyle(fontSize: 20, color: Colors.white),
           ),
           SizedBox(

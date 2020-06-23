@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:imnstudioslanding/constants/app_colors.dart';
+import 'package:imnstudioslanding/routing/route_names.dart';
 import 'package:imnstudioslanding/services/navigation_service.dart';
 
 import '../../locator.dart';
@@ -57,7 +58,7 @@ class ContactViewMobile extends StatelessWidget {
               ),
               FlatButton(
                 onPressed: () {
-                  locator<NavigationService>().navigateTo("PortfolioRoute");
+                  locator<NavigationService>().navigateTo(PortfolioRoute);
                 },
                 child: Text(
                   "see developer's portfolio",
