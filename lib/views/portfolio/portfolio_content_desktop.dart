@@ -258,7 +258,7 @@ class PortfolioContentDesktop extends StatelessWidget {
             height: 10,
           ),
           Text(
-            'Currently freelancing and looking for opportunities.',
+            'Working as an Android App Developer',
             style: TextStyle(fontSize: 18, color: Colors.white),
           ),
           SizedBox(
