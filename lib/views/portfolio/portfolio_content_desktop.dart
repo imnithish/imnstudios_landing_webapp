@@ -120,7 +120,7 @@ class PortfolioContentDesktop extends StatelessWidget {
                   width: 10,
                 ),
                 Text(
-                  'Java, Kotlin, Dart, C++, C',
+                  'Kotlin, Java, Dart and I know how Python, C and C++ looks like :D',
                   style: TextStyle(
                     fontSize: 25,
                     color: Colors.green,
