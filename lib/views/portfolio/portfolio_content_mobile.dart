@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_dash/flutter_dash.dart';
 import 'package:imnstudioslanding/constants/app_colors.dart';
 import 'package:imnstudioslanding/extensions/hover_extensions.dart';
+
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:js' as js;
 
@@ -166,47 +167,47 @@ class PortfolioContentMobile extends StatelessWidget {
             height: 10,
           ),
 
-                Text(
-                  'Architecture:',
-                  style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.white,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Text(
-                  'MVVM, MVP, Clean Code',
-                  style: TextStyle(
-                    fontSize: 25,
-                    color: Colors.yellowAccent,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
+          Text(
+            'Architecture:',
+            style: TextStyle(
+              fontSize: 15,
+              color: Colors.white,
+            ),
+            textAlign: TextAlign.center,
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          Text(
+            'MVVM, MVP, Clean Code',
+            style: TextStyle(
+              fontSize: 25,
+              color: Colors.yellowAccent,
+            ),
+            textAlign: TextAlign.center,
+          ),
           SizedBox(
             height: 10,
           ),
-                Text(
-                  'Worth Mentioning :D:',
-                  style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.white,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Text(
-                  'Firebase, Technical Writing, UI/UX',
-                  style: TextStyle(
-                    fontSize: 25,
-                    color: Colors.deepPurple,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
+          Text(
+            'Worth Mentioning :D:',
+            style: TextStyle(
+              fontSize: 15,
+              color: Colors.white,
+            ),
+            textAlign: TextAlign.center,
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          Text(
+            'Firebase, Technical Writing, UI/UX',
+            style: TextStyle(
+              fontSize: 25,
+              color: Colors.deepPurple,
+            ),
+            textAlign: TextAlign.center,
+          ),
           SizedBox(
             height: 20,
           ),
@@ -276,7 +277,10 @@ class PortfolioContentMobile extends StatelessWidget {
           ),
           Text(
             'PROJECTS.',
-            style: TextStyle(fontSize: 20, color: Colors.white,),
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.white,
+            ),
           ),
           // SizedBox(
           //   height: 10,
@@ -314,7 +318,10 @@ class PortfolioContentMobile extends StatelessWidget {
           ),
           Text(
             'CONTACT.',
-            style: TextStyle(fontSize: 20, color: Colors.white, ),
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.white,
+            ),
           ),
           SizedBox(
             height: 10,
@@ -382,27 +389,26 @@ class PortfolioContentMobile extends StatelessWidget {
           ),
         ],
       ),
-
     );
   }
 }
-_launchURLRc()  {
+
+_launchURLRc() {
   js.context.callMethod("open", ["https://imnstudios.com/#/riderconnect"]);
 }
 
-_launchURLGb()  {
+_launchURLGb() {
   js.context.callMethod("open", ["https://github.com/imnithish/"]);
 }
 
-_launchURLLi()  {
+_launchURLLi() {
   js.context.callMethod("open", ["https://www.linkedin.com/in/imnithish/"]);
 }
 
-_launchURLFb()  {
+_launchURLFb() {
   js.context.callMethod("open", ["https://www.facebook.com/nithish.ag/"]);
 }
 
-_launchURLInsta()  {
+_launchURLInsta() {
   js.context.callMethod("open", ["https://www.instagram.com/imnithish/"]);
 }
-
