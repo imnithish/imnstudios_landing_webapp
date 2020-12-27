@@ -111,7 +111,7 @@ class PortfolioContentMobile extends StatelessWidget {
             width: 10,
           ),
           Text(
-            'Kotlin, Java, Dart and I know how Python, C and C++ looks like :D',
+            'Kotlin, Java, Dart',
             style: TextStyle(
               fontSize: 25,
               color: Colors.green,
@@ -122,7 +122,7 @@ class PortfolioContentMobile extends StatelessWidget {
             height: 10,
           ),
           Text(
-            'Databases:',
+            'Frontend:',
             style: TextStyle(
               fontSize: 15,
               color: Colors.white,
@@ -133,7 +133,7 @@ class PortfolioContentMobile extends StatelessWidget {
             width: 10,
           ),
           Text(
-            'MySQL, Firebase',
+            'Native Android, Flutter',
             style: TextStyle(
               fontSize: 25,
               color: Colors.pinkAccent,
@@ -144,7 +144,7 @@ class PortfolioContentMobile extends StatelessWidget {
             height: 10,
           ),
           Text(
-            'Frameworks:',
+            'Backend:',
             style: TextStyle(
               fontSize: 15,
               color: Colors.white,
@@ -155,7 +155,7 @@ class PortfolioContentMobile extends StatelessWidget {
             width: 10,
           ),
           Text(
-            'Android, Flutter',
+            'Ktor',
             style: TextStyle(
               fontSize: 25,
               color: Colors.blue,
@@ -167,7 +167,7 @@ class PortfolioContentMobile extends StatelessWidget {
           ),
 
                 Text(
-                  'Tools:',
+                  'Architecture:',
                   style: TextStyle(
                     fontSize: 15,
                     color: Colors.white,
@@ -178,7 +178,7 @@ class PortfolioContentMobile extends StatelessWidget {
                   width: 10,
                 ),
                 Text(
-                  'Git, GitHub, Firebase',
+                  'MVVM, MVP, Clean Code',
                   style: TextStyle(
                     fontSize: 25,
                     color: Colors.yellowAccent,
@@ -189,7 +189,7 @@ class PortfolioContentMobile extends StatelessWidget {
             height: 10,
           ),
                 Text(
-                  'Others:',
+                  'Worth Mentioning :D:',
                   style: TextStyle(
                     fontSize: 15,
                     color: Colors.white,
@@ -200,7 +200,7 @@ class PortfolioContentMobile extends StatelessWidget {
                   width: 10,
                 ),
                 Text(
-                  'Technical Writing, UI/UX Designing',
+                  'Firebase, Technical Writing, UI/UX',
                   style: TextStyle(
                     fontSize: 25,
                     color: Colors.deepPurple,
@@ -278,24 +278,24 @@ class PortfolioContentMobile extends StatelessWidget {
             'PROJECTS.',
             style: TextStyle(fontSize: 20, color: Colors.white,),
           ),
-          SizedBox(
-            height: 10,
-          ),
-          GestureDetector(
-            onTap: _launchURLRc,
-            child: Text(
-              'RIDER CONNECT',
-              style: TextStyle(fontSize: 18, color: Colors.deepOrange),
-            ),
-          ).showCursorOnHover.moveUpOnHover,
-          SizedBox(
-            height: 10,
-          ),
+          // SizedBox(
+          //   height: 10,
+          // ),
+          // GestureDetector(
+          //   onTap: _launchURLRc,
+          //   child: Text(
+          //     'RIDER CONNECT',
+          //     style: TextStyle(fontSize: 18, color: Colors.deepOrange),
+          //   ),
+          // ).showCursorOnHover.moveUpOnHover,
+          // SizedBox(
+          //   height: 10,
+          // ),
           GestureDetector(
             onTap: _launchURLGb,
             child: Text(
               'Check all projects at GitHub.',
-              style: TextStyle(fontSize: 18, color: Colors.white),
+              style: TextStyle(fontSize: 18, color: Colors.deepOrange),
             ),
           ).showCursorOnHover.moveUpOnHover,
           SizedBox(
@@ -370,7 +370,15 @@ class PortfolioContentMobile extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: 100,
+            height: 20,
+          ),
+          Text(
+            'Build using Flutter Web <3',
+            style: TextStyle(fontSize: 12, color: Colors.blue),
+            textAlign: TextAlign.center,
+          ),
+          SizedBox(
+            height: 50,
           ),
         ],
       ),
